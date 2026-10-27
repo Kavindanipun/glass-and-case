@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Find tempered glass for your phone with Glass & Case."><title>Tempered Glass Store | Glass & Case</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="store-hero.css"><link rel="stylesheet" href="shared-site.css"></head>
+<body><header class="gg-nav"><nav class="gg-nav-left" aria-label="Product navigation"><a href="index.html#home">Home</a><a class="current" href="tempered-glass-store.html" aria-current="page">Tempered Glass</a><a href="index.html#back-covers">Back Covers</a></nav><a class="gg-brand" href="index.html#home" aria-label="Glass and Case home">GLASS <span>&amp; CASE</span></a><a class="gg-nav-contact" href="https://wa.me/94777318581?text=Hi%20Glass%20%26%20Case%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank" rel="noopener noreferrer">Contact <span aria-hidden="true">↗</span></a></header>
+<main><section class="hero-wrap" aria-label="Search your phone model"><div class="banner"><img class="banner-image" src="assets/glass-hero-blue.png" alt="Blue smartphone with a precisely aligned transparent screen protector" fetchpriority="high"><div class="shade"></div><div class="hero-content"><p class="eyebrow">GLASS &amp; CASE / TEMPERED GLASS STORE</p><h1>Find Your <em>Perfect Fit.</em></h1><p class="hero-sub">Premium protection begins with your phone model.</p><form id="model-search" class="glass-search" role="search"><label class="visually-hidden" for="phone-model">Search your mobile</label><svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.9" cy="10.9" r="6.6"></circle><path d="m16 16 5 5"></path></svg><input id="phone-model" name="model" type="search" autocomplete="off" placeholder="Search your mobile" required><button type="submit">Search <span aria-hidden="true">↗</span></button></form><p class="helper">Search any device model · Explore glass types</p></div></div></section>
+
+<section class="catalog-wrap" aria-labelledby="catalog-title">
+  <div class="catalog-layout">
+    <aside class="filter-panel" aria-label="Store filters">
+      <div class="filter-head"><h2>Filter</h2><button type="button" class="clear-btn" id="clear-filters">Clear All</button></div>
+
+      <div class="filter-block brand-only-filter">
+        <div class="filter-title">Brand</div>
+        <button type="button" class="mobile-brand-toggle" id="mobile-brand-toggle" aria-expanded="false" aria-controls="brand-filter-options">Phone Brands <span aria-hidden="true">▾</span></button>
+        <div id="brand-filter-options" class="brand-filter-options">
+        <label><input type="checkbox" class="brand-filter" value="iphone"> iPhone</label>
+        <label><input type="checkbox" class="brand-filter" value="samsung"> Samsung</label>
+        <label><input type="checkbox" class="brand-filter" value="xiaomi"> Xiaomi</label>
+        <label><input type="checkbox" class="brand-filter" value="honor"> Honor</label>
+        <label><input type="checkbox" class="brand-filter" value="oppo"> OPPO</label>
+        <label><input type="checkbox" class="brand-filter" value="vivo"> vivo</label>
+        <label><input type="checkbox" class="brand-filter" value="oneplus"> OnePlus</label>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-title">Glass Type</div>
+        <button type="button" class="mobile-filter-toggle" aria-expanded="false" aria-controls="mobile-glass-type-options">Glass Type <span aria-hidden="true">▾</span></button>
+        <div class="mobile-filter-options" id="mobile-glass-type-options">
+        <label><input type="checkbox" class="type-filter" value="mtb"> MTB</label>
+        <label><input type="checkbox" class="type-filter" value="super-d"> Super D</label>
+        <label><input type="checkbox" class="type-filter" value="privacy"> Privacy</label>
+        <label><input type="checkbox" class="type-filter" value="mossily-privacy"> Mossily Privacy</label>
+        <label><input type="checkbox" class="type-filter" value="uv"> Mossily UV</label>
+        <label><input type="checkbox" class="type-filter" value="borderless"> Mossily Borderless</label>
+        <label><input type="checkbox" class="type-filter" value="clear-hd"> Mossily Clear HD</label>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-title">Price Range</div>
+        <button type="button" class="mobile-filter-toggle" aria-expanded="false" aria-controls="mobile-price-range-options">Price Range <span aria-hidden="true">▾</span></button>
+        <div class="mobile-filter-options" id="mobile-price-range-options">
+        <div class="price-row"><span>Rs. 500</span><span id="price-output">Rs. 3000</span></div>
+        <input type="range" min="500" max="3000" step="100" value="3000" id="price-range" class="price-range">
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-title">Availability</div>
+        <button type="button" class="mobile-filter-toggle" aria-expanded="false" aria-controls="mobile-availability-options">Availability <span aria-hidden="true">▾</span></button>
+        <div class="mobile-filter-options" id="mobile-availability-options">
+        <label><input type="checkbox" class="stock-filter" value="in-stock"> In Stock</label>
+        <label><input type="checkbox" class="stock-filter" value="pre-order"> Pre Order</label>
+        </div>
+      </div>
+    </aside>
+
+    <div class="products-area"><div id="models-view" class="models-view"><div class="products-top"><div><p class="section-mini">BROWSE BY BRAND</p><h2>Choose your phone model.</h2></div></div><div id="brand-model-list"></div></div><div id="model-return" class="model-return" hidden><button type="button" id="all-models-btn">← All Phone Models</button><h2 id="chosen-model-title"></h2><p>Available fits and stock are confirmed before purchase.</p></div>
+      <div class="products-top" id="glass-products-head" hidden>
+        <div>
+          <p class="section-mini">TEMPERED GLASS COLLECTION</p>
+          <h2 id="catalog-title">Choose your protection style.</h2>
+        </div>
+        <div class="sort-wrap">
+          <label for="sort-products" class="visually-hidden">Sort products</label>
+          <select id="sort-products">
+            <option value="default">Sort by: Featured</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="product-grid" hidden>
+        <article class="product-card" data-brand="iphone" data-type="mtb" data-price="1200" data-stock="in-stock">
+          <div class="card-visual v1 has-photo"><span class="type-pill">MTB</span><img class="product-photo" src="assets/mtb-product.png" alt="MTB tempered glass packaging and protector" loading="lazy"></div>
+          <h3>MTB Tempered Glass</h3>
+          <p>Reliable everyday protection with a clean crystal-clear finish.</p>
+          <div class="meta-row"><span>For iPhone Series</span><strong>Rs. 1200</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="MTB Tempered Glass">Buy Now</button></div>
+        </article>
+        <article class="product-card" data-brand="samsung" data-type="privacy" data-price="1500" data-stock="in-stock">
+          <div class="card-visual v2 has-photo"><span class="type-pill">Privacy</span><img class="product-photo" src="assets/privacy-product.png" alt="Privacy tempered glass packaging and protector" loading="lazy"></div>
+          <h3>Privacy Tempered Glass</h3>
+          <p>Anti-spy privacy protection with a premium darkened side-view effect.</p>
+          <div class="meta-row"><span>For Samsung Series</span><strong>Rs. 1500</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="Privacy Tempered Glass">Buy Now</button></div>
+        </article>
+        <article class="product-card" data-brand="xiaomi" data-type="super-d" data-price="1400" data-stock="in-stock">
+          <div class="card-visual v3 has-photo"><span class="type-pill">Super D</span><img class="product-photo" src="assets/super-d-product.png" alt="Super D tempered glass packaging and protector" loading="lazy"></div>
+          <h3>Super D Tempered Glass</h3>
+          <p>Extra premium feel with stronger edge confidence for daily use.</p>
+          <div class="meta-row"><span>For Xiaomi Series</span><strong>Rs. 1400</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="Super D Tempered Glass">Buy Now</button></div>
+        </article>
+        <article class="product-card" data-brand="oneplus" data-type="uv" data-price="1600" data-stock="pre-order">
+          <div class="card-visual v4 has-photo"><span class="type-pill">Mossily UV</span><img class="product-photo" src="assets/mossily-uv-product.png" alt="Mossily UV curved tempered glass packaging and protector" loading="lazy"></div>
+          <h3>Mossily UV Tempered Glass</h3>
+          <p>Specialized UV-fit protection for selected curved-screen phone models.</p>
+          <div class="meta-row"><span>For OnePlus Series</span><strong>Rs. 1600</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="Mossily UV Tempered Glass">Buy Now</button></div>
+        </article>
+        <article class="product-card" data-brand="oppo" data-type="mossily-privacy" data-price="1300" data-stock="in-stock">
+          <div class="card-visual v5 has-photo"><span class="type-pill">Mossily Privacy</span><img class="product-photo" src="assets/mossily-privacy-product.png" alt="Mossily privacy tempered glass packaging and protector" loading="lazy"></div>
+          <h3>Mossily Privacy Glass</h3>
+          <p>Privacy-focused Mossily glass with a clean look and smooth everyday feel.</p>
+          <div class="meta-row"><span>For OPPO Series</span><strong>Rs. 1300</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="Mossily Privacy Glass">Buy Now</button></div>
+        </article>
+        <article class="product-card" data-brand="vivo" data-type="borderless" data-price="1350" data-stock="in-stock">
+          <div class="card-visual v6 has-photo"><span class="type-pill">Mossily Borderless</span><img class="product-photo" src="assets/mossily-borderless-product.png" alt="Mossily borderless tempered glass packaging and protector" loading="lazy"></div>
+          <h3>Mossily Borderless Glass</h3>
+          <p>Borderless full-view protection with a wider clean display appearance.</p>
+          <div class="meta-row"><span>For vivo Series</span><strong>Rs. 1350</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="Mossily Borderless Glass">Buy Now</button></div>
+        </article>
+        <article class="product-card" data-brand="samsung" data-type="clear-hd" data-price="1250" data-stock="pre-order">
+          <div class="card-visual v7 has-photo"><span class="type-pill">Mossily Clear HD</span><img class="product-photo" src="assets/mossily-clear-hd-product.png" alt="Mossily Clear HD tempered glass packaging and protector" loading="lazy"></div>
+          <h3>Mossily Clear HD Glass</h3>
+          <p>High-definition clear view glass with a crisp look and smooth touch response.</p>
+          <div class="meta-row"><span>For Samsung Series</span><strong>Rs. 1250</strong></div>
+          <div class="card-actions"><button class="ghost-btn">View Details</button><button class="primary-btn inquire-btn" data-product="Mossily Clear HD Glass">Buy Now</button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No products match the selected filters.</p>
+    </div>
+  </div>
+</section></main>
+<script src="store-hero.js" defer></script><a class="gc-wa-float" href="https://wa.me/94777318581?text=Hi%20Glass%20%26%20Case%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank" rel="noopener noreferrer" aria-label="Chat with Glass and Case on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 32 32" width="29" height="29" fill="currentColor" aria-hidden="true"><path d="M16 2.5A13.5 13.5 0 0 0 4.25 22.65L2.5 29.5l7.01-1.82A13.5 13.5 0 1 0 16 2.5Zm0 24.5a11 11 0 0 1-5.58-1.52l-.4-.24-4.13 1.07 1.1-4.02-.26-.42A11 11 0 1 1 16 27Zm6.04-8.24c-.33-.17-1.96-.97-2.27-1.08-.3-.11-.53-.16-.75.17-.22.33-.86 1.08-1.05 1.3-.2.22-.39.25-.72.08-.33-.16-1.4-.52-2.68-1.65-.99-.88-1.66-1.97-1.85-2.3-.2-.33-.02-.51.15-.68.15-.15.33-.39.5-.58.16-.19.22-.33.33-.55.11-.22.05-.42-.03-.58-.08-.17-.75-1.81-1.03-2.48-.27-.65-.54-.56-.75-.57h-.64c-.22 0-.58.08-.88.42-.3.33-1.15 1.13-1.15 2.75s1.18 3.19 1.35 3.42c.16.22 2.31 3.52 5.6 4.94.79.34 1.41.54 1.89.69.8.25 1.53.22 2.1.13.64-.1 1.96-.8 2.24-1.58.28-.77.28-1.43.19-1.57-.08-.14-.3-.22-.63-.39Z"/></svg></a></body></html>
